@@ -5,6 +5,7 @@
 int main() {
     // LED IO initialisieren
     led_init();
+
     // LED0-LED3 an- und ausschalten mithilfe einer for-Schleife.
     // Dieses Mal jedoch, wechsle die Geschwindigkeit
     while (1 == 1) {

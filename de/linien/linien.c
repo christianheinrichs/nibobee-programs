@@ -5,6 +5,7 @@
 int main() {
     // LED IO initialisieren
     led_init();
+
     // Linien-IO initialisieren
     line_init();
 

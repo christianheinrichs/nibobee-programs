@@ -5,6 +5,7 @@
 int main() {
     // Initialize motor IO
     motpwm_init();
+
     // Initialize feeler IO
     sens_init();
 
@@ -29,7 +30,7 @@ int main() {
             case -1: speed_r =  500; break;
         }
 
-        // Apply the values to the motors
+        // Set motor PWM values
         motpwm_setLeft(speed_r);
         motpwm_setRight(speed_l);
     }

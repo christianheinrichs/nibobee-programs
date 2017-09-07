@@ -28,7 +28,7 @@ int main() {
             case -1: speed_r = -500; break;
         }
 
-        // Apply the values to the motors
+        // Set motor PWM values 
         motpwm_setLeft(speed_l);
         motpwm_setRight(speed_r);
     }

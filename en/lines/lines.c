@@ -5,10 +5,11 @@
 int main() {
     // Initialize LED IO
     led_init();
+
     // Initialize line IO
     line_init();
 
-    // Indicate the values of the line sensors
+    // Show the values of the line sensors
     // Also show, if the values are too high or too low
     while (1 == 1) {
         enable_interrupts();
