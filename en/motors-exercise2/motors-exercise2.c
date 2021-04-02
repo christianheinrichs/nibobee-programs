@@ -3,10 +3,10 @@
 #include <nibobee/motpwm.h>
 
 int main() {
-    // Initialize motor IO
+    // Initialise motor IO
     motpwm_init();
 
-    // Initialize feeler IO
+    // Initialise feeler IO
     sens_init();
 
     // This time, the speed logic is reversed

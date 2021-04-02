@@ -13,14 +13,14 @@ int main() {
         // Interrupts für Odometriesensoren aktivieren
         enable_interrupts();
 
-        // Odometriewerte zurücksetzen,
-        // wenn mit einem der Fühler interagiert wird
+        // Odometriewerte zurücksetzen, wenn mit einem der Fühler interagiert
+        // wird
         if (sens_getLeft() || sens_getRight()) {
             odometry_reset();
         }
 
-        // Odometriestatus durch Drehen der Räder
-        // (sei es vorwärts oder rückwärts) anzeigen
+        // Odometriestatus durch Drehen der Räder (sei es vorwärts oder
+        // rückwärts) anzeigen
         led_set(LED_L_YE, odometry_getLeft(0) > 10);
         led_set(LED_L_RD, odometry_getLeft(0) > 20);
         led_set(LED_R_RD, odometry_getRight(0) > 20);

@@ -3,9 +3,9 @@
 #include <nibobee/motpwm.h>
 
 int main() {
-    // Initialize motor IO
+    // Initialise motor IO
     motpwm_init();
-    // Initialize feeler IO
+    // Initialise feeler IO
     sens_init();
 
     while (1 == 1) {
@@ -28,7 +28,7 @@ int main() {
             case -1: speed_r = -500; break;
         }
 
-        // Set motor PWM values 
+        // Set motor PWM values
         motpwm_setLeft(speed_l);
         motpwm_setRight(speed_r);
     }

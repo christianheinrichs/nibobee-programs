@@ -3,7 +3,7 @@
 #include <nibobee/delay.h>
 
 int main() {
-    // Initialize LED IO
+    // Initialise LED IO
     led_init();
 
     // Turn LED0-LED3 on and off by using a for loop

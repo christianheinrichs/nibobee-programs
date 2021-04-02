@@ -3,13 +3,13 @@
 #include <nibobee/motpwm.h>
 
 int main() {
-    // Initialize motor IO
+    // Initialise motor IO
     motpwm_init();
 
-    // Initialize feeler IO
+    // Initialise feeler IO
     sens_init();
 
-    // This while loop is identical with the one of the program "motors.c"
+    // This while loop is identical with the one of the program ‘motors.c’
     // However, you can see slightly different speed values
     while (1 == 1) {
         // Enable interrupts for motor functions

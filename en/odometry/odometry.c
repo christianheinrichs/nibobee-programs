@@ -4,7 +4,7 @@
 #include <nibobee/odometry.h>
 
 int main() {
-    // Initialize feeler IO, LED IO and odometry sensor IO
+    // Initialise feeler IO, LED IO and odometry sensor IO
     led_init();
     odometry_init();
     sens_init();
@@ -13,14 +13,14 @@ int main() {
         // Enable interrupts for odometry sensors
         enable_interrupts();
 
-        // Reset the odometry values if one of the feelers
-        // is being interacted with
+        // Reset the odometry values if one of the feelers is being interacted
+        // with
         if (sens_getLeft() || sens_getRight()) {
             odometry_reset();
         }
 
-        // Show the odometry status by turning the wheels
-        // either forwards or backwards
+        // Show the odometry status by turning the wheels, either forwards or
+        // backwards
         led_set(LED_L_YE, odometry_getLeft(0) > 10);
         led_set(LED_L_RD, odometry_getLeft(0) > 20);
         led_set(LED_R_RD, odometry_getRight(0) > 20);

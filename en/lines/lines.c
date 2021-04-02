@@ -3,10 +3,10 @@
 #include <nibobee/line.h>
 
 int main() {
-    // Initialize LED IO
+    // Initialise LED IO
     led_init();
 
-    // Initialize line IO
+    // Initialise line IO
     line_init();
 
     // Show the values of the line sensors

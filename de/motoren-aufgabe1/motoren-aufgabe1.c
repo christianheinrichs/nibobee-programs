@@ -17,14 +17,16 @@ int main() {
         int16_t speed_l = 0;
         int16_t speed_r = 0;
 
-        // Linke Motorgeschwindigkeit abhängig vom Status des linken Fühlers setzen
+        // Linke Motorgeschwindigkeit abhängig vom Status des linken Fühlers
+        // setzen
         switch (sens_getLeft()) {
             case  1: speed_l =  750; break;
             case  0: speed_l =    0; break;
             case -1: speed_l = -300; break;
         }
 
-        // Rechte Motorgeschwindigkeit abhängig vom Status des rechten Fühlers setzen
+        // Rechte Motorgeschwindigkeit abhängig vom Status des rechten Fühlers
+        // setzen
         switch (sens_getRight()) {
             case  1: speed_r =  750; break;
             case  0: speed_r =    0; break;

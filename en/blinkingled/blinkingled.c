@@ -3,7 +3,7 @@
 #include <nibobee/delay.h>
 
 int main() {
-    // Initialize LED IO
+    // Initialise LED IO
     led_init();
 
     // Turn LED1 on and off with a delay of 400ms
