@@ -1,0 +1,20 @@
+Version 31.8.2014
+- First commit
+
+Version 8.9.2014
+- Reorganise folder structure
+- Split repository into English and German version
+
+Version 7.9.2017
+- Add .gitignore file
+- Add TODO file
+- Delete unnecessary README files in ‘de’ and ‘en’ directories
+- Replace relative links with absolute links in README.md
+
+Version 2.4.2021
+- Slightly revise README
+- Minor code comment corrections
+
+Version 19.1.2022
+- Add changelog
+- Add README plaintext file
