@@ -8,7 +8,7 @@ TARGET=first
 
 # Den Benutzer informieren, drei Sekunden warten und dann den NIBObee in den
 # Werkszustand versetzen
-printf '\E[31m'"\033[1mDas NIBObee Reset-Programm wird in 3 Sekunden geflasht\n\033[0m"
+printf '\E[31m'"\033[1mDas NIBObee Reset-Programm wird in drei Sekunden geflasht\n\033[0m"
 sleep 3
 sudo avrdude -c $PROGRAMMER -p m16 -B 10 -U lfuse:w:$LFUSE:m -U hfuse:w:$HFUSE:m
 sudo avrdude -c $PROGRAMMER -p m16 -B 2 -U flash:w:$TARGET.hex

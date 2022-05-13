@@ -8,3 +8,7 @@ However, a few programs are missing.
 
 - [English version](en)
 - [German version](de)
+
+#### Licensing
+This project is licensed under the GNU GPL 3.0 license. To read it, please
+refer to the [LICENSE](LICENSE) document.

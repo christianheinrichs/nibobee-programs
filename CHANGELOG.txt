@@ -18,3 +18,9 @@ Version 2.4.2021
 Version 19.1.2022
 - Add changelog
 - Add README plaintext file
+
+Version 13.5.2022
+- Rename TODO
+- Add licensing notice
+- Update README.txt
+- Update bash scripts
